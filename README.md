@@ -1,4 +1,4 @@
-# NextToDo
+# Next To Do
 
 Extensions to the [todo.txt](http://todotxt.com) system, including functionality to support 
 a day-of-week/time-of-day-based workflow.
