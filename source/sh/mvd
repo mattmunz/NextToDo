@@ -1,0 +1,16 @@
+#!/bin/bash
+
+source $PROGRAMMING_DIRECTORY/Mshell/source/sh/next_to_do.sh
+
+action=$1
+shift
+
+[ "$action" = "usage" ] && {
+
+  echo "  Move to date (mvd):"
+  echo "    mvd DAY TIME_OF_DAY <line numbers>"
+  echo ""
+  exit
+}
+
+moveTasks $TODO_FILE $@
