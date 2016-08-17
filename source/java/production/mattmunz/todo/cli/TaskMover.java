@@ -88,7 +88,8 @@ public class TaskMover
     
     String archiveFileName 
       = "" + todoTxtFile.getFileName() + "." + currentTimeMillis() + ".old";
-    
+
+    // TODO Perhaps it would be better to archive the original file here...
     write(archiveDirectory.resolve(archiveFileName), newLines);
     
     out.println("" + lineNumbers.size() + " task(s) were moved to " + day + " " + timeOfDay 

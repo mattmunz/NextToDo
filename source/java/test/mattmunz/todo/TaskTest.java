@@ -117,9 +117,6 @@ public class TaskTest
   @Test(expected=IllegalArgumentException.class)
   public void parsingInvalidTimeOfDayLines2() { new Task("12 (A) tod:A foo tod:M"); }
   
-  /**
-   * An order-independent comparison. If Set.equals doesn't work, can use guavas sets.difference
-   */
   private void assertSetEquals(HashSet<String> left, Set<String> right)
   {
     assertTrue("Sets not equal: " + left + " != " + right, left.size() == right.size() && left.containsAll(right));
